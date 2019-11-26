@@ -101,6 +101,7 @@ func NewServer(cfg *Config) (srv *Server, err error) {
 		KafkaAddr: strings.Split(up.KafkaAddrs, ","),
 		CommitTS:  srv.finishTS,
 		Topic:     up.Topic,
+		ClientType: cfg.KafkaClient,
 	}
 
 	log.Info("use kafka binlog reader", zap.Reflect("cfg", readerCfg))

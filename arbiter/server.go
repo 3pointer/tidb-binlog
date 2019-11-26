@@ -26,7 +26,7 @@ import (
 	"github.com/pingcap/log"
 	"github.com/pingcap/tidb-binlog/pkg/loader"
 	"github.com/pingcap/tidb-binlog/pkg/util"
-	"github.com/3pointer/tidb-tools/tidb-binlog/driver/reader"
+	"github.com/pingcap/tidb-tools/tidb-binlog/driver/reader"
 	"github.com/pingcap/tidb/store/tikv/oracle"
 	"go.uber.org/zap"
 )

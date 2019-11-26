@@ -44,6 +44,7 @@ type Config struct {
 	LogFile       string `toml:"log-file" json:"log-file"`
 	OpenSaramaLog bool   `toml:"open-sarama-log" json:"open-sarama-log"`
 	KafkaClient string `toml:"kafka-client" json:"kafka-client"`
+	MessageBufferSize int `toml:"message-buffer-size" json:"message-buffer-size"`
 
 	Up   UpConfig   `toml:"up" json:"up"`
 	Down DownConfig `toml:"down" json:"down"`

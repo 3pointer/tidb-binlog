@@ -102,6 +102,7 @@ func NewServer(cfg *Config) (srv *Server, err error) {
 		CommitTS:  srv.finishTS,
 		Topic:     up.Topic,
 		ClientType: cfg.KafkaClient,
+		MessageBufferSize: cfg.MessageBufferSize,
 	}
 
 	log.Info("use kafka binlog reader", zap.Reflect("cfg", readerCfg))

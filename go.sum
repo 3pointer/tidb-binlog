@@ -5,6 +5,10 @@ github.com/3pointer/tidb-tools v3.0.0-beta.1.0.20191126053412-d0040014f418+incom
 github.com/3pointer/tidb-tools v3.0.0-beta.1.0.20191126053412-d0040014f418+incompatible/go.mod h1:JMgxxVrA65Vrzn0sc8mETm4MsH8JYUVryatShXDONb8=
 github.com/3pointer/tidb-tools v3.0.0-beta.1.0.20191126070942-23aef4916f41+incompatible h1:wltQOdT+jtaCfxVtjehyrcwawTVGG3mZX1AKmqdeJx8=
 github.com/3pointer/tidb-tools v3.0.0-beta.1.0.20191126070942-23aef4916f41+incompatible/go.mod h1:JMgxxVrA65Vrzn0sc8mETm4MsH8JYUVryatShXDONb8=
+github.com/3pointer/tidb-tools v3.0.0-beta.1.0.20191126074019-400c108fa68f+incompatible h1:ydCjjAvEISDfPo4BPLhv0Ls9Xm/KW68p2Bj+sgmG9+o=
+github.com/3pointer/tidb-tools v3.0.0-beta.1.0.20191126074019-400c108fa68f+incompatible/go.mod h1:JMgxxVrA65Vrzn0sc8mETm4MsH8JYUVryatShXDONb8=
+github.com/3pointer/tidb-tools v3.0.0-beta.1.0.20191126074916-b4ef1cde5001+incompatible h1:Fybdg1nbLclNxbTEdZ5q2dhZg40HMOEjdLK6j9e3sAA=
+github.com/3pointer/tidb-tools v3.0.0-beta.1.0.20191126074916-b4ef1cde5001+incompatible/go.mod h1:JMgxxVrA65Vrzn0sc8mETm4MsH8JYUVryatShXDONb8=
 github.com/BurntSushi/toml v0.3.1 h1:WXkYYl6Yr3qBf1K79EBnL4mak0OimBfB0XUf9Vl28OQ=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/DATA-DOG/go-sqlmock v1.3.0 h1:ljjRxlddjfChBJdFKJs5LuCwCWPLaC1UZLwAo3PBBMk=

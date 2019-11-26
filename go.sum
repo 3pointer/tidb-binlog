@@ -11,6 +11,8 @@ github.com/3pointer/tidb-tools v3.0.0-beta.1.0.20191126074916-b4ef1cde5001+incom
 github.com/3pointer/tidb-tools v3.0.0-beta.1.0.20191126074916-b4ef1cde5001+incompatible/go.mod h1:JMgxxVrA65Vrzn0sc8mETm4MsH8JYUVryatShXDONb8=
 github.com/3pointer/tidb-tools v3.0.0-beta.1.0.20191126103037-fd6c6e85eaae+incompatible h1:/yjyvxUj3VOIy1AxRJSBHC/usegsYuXon4yYzrf4pH0=
 github.com/3pointer/tidb-tools v3.0.0-beta.1.0.20191126103037-fd6c6e85eaae+incompatible/go.mod h1:JMgxxVrA65Vrzn0sc8mETm4MsH8JYUVryatShXDONb8=
+github.com/3pointer/tidb-tools v3.0.0-beta.1.0.20191126114022-e7b42e39625a+incompatible h1:8yHaCHhXCfWGiYbCtju1Oi3ybVSxwgOlwCAiuMaf9vQ=
+github.com/3pointer/tidb-tools v3.0.0-beta.1.0.20191126114022-e7b42e39625a+incompatible/go.mod h1:JMgxxVrA65Vrzn0sc8mETm4MsH8JYUVryatShXDONb8=
 github.com/3pointer/tidb-tools v3.0.0-beta.1.0.20191126115709-8f5d24581da0+incompatible h1:oW0MmYFwtDqgNf4rvCUMBD0tnVrqq/OqXMNpj4VY97g=
 github.com/3pointer/tidb-tools v3.0.0-beta.1.0.20191126115709-8f5d24581da0+incompatible/go.mod h1:JMgxxVrA65Vrzn0sc8mETm4MsH8JYUVryatShXDONb8=
 github.com/3pointer/tidb-tools v3.0.0-beta.1.0.20191126121212-29cf67b698a3+incompatible h1:GFf4aBin7VzPNRi1Go7EtKBRqNvw2YWJn/5MTOLZ9dk=

@@ -1,6 +1,7 @@
 module github.com/pingcap/tidb-binlog
 
 require (
+	github.com/3pointer/tidb-tools v3.0.0-beta.1.0.20191126053412-d0040014f418+incompatible
 	github.com/BurntSushi/toml v0.3.1
 	github.com/DATA-DOG/go-sqlmock v1.3.0
 	github.com/Shopify/sarama v1.23.1
@@ -12,7 +13,6 @@ require (
 	github.com/google/gofuzz v1.0.0
 	github.com/gorilla/mux v1.6.2
 	github.com/kami-zh/go-capturer v0.0.0-20171211120116-e492ea43421d
-	github.com/pierrec/lz4 v2.0.5+incompatible // indirect
 	github.com/pingcap/check v0.0.0-20191107115940-caf2b9e6ccf4
 	github.com/pingcap/errors v0.11.4
 	github.com/pingcap/kvproto v0.0.0-20191118050206-47672e7eabc0
@@ -26,6 +26,7 @@ require (
 	github.com/prometheus/client_model v0.0.0-20190129233127-fd36f4220a90
 	github.com/rcrowley/go-metrics v0.0.0-20181016184325-3113b8401b8a
 	github.com/samuel/go-zookeeper v0.0.0-20170815201139-e6b59f6144be
+	github.com/segmentio/kafka-go v0.3.4 // indirect
 	github.com/siddontang/go v0.0.0-20180604090527-bdc77568d726
 	github.com/siddontang/go-mysql v0.0.0-20190618002340-dbe0224ac097 // indirect
 	github.com/soheilhy/cmux v0.1.4

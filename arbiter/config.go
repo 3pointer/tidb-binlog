@@ -43,6 +43,7 @@ type Config struct {
 	ListenAddr    string `toml:"addr" json:"addr"`
 	LogFile       string `toml:"log-file" json:"log-file"`
 	OpenSaramaLog bool   `toml:"open-sarama-log" json:"open-sarama-log"`
+	KafkaClient string `toml:"kafka-client" json:"kafka-client"`
 
 	Up   UpConfig   `toml:"up" json:"up"`
 	Down DownConfig `toml:"down" json:"down"`
@@ -97,6 +98,7 @@ func NewConfig() *Config {
 	fs.IntVar(&cfg.Metrics.Interval, "metrics.interval", 15, "prometheus client push interval in second, set \"0\" to disable prometheus push")
 	fs.StringVar(&cfg.LogFile, "log-file", "", "log file path")
 	fs.BoolVar(&cfg.OpenSaramaLog, "open-sarama-log", true, "save the logs from sarama (https://github.com/Shopify/sarama), a client of Kafka")
+	fs.StringVar(&cfg.KafkaClient, "kafka-client", "sarama", "arbiter kafka client sarama/kafka-go")
 
 	fs.Int64Var(&cfg.Up.InitialCommitTS, "up.initial-commit-ts", 0, "if arbiter doesn't have checkpoint, use initial commitTS to initial checkpoint")
 	fs.StringVar(&cfg.Up.Topic, "up.topic", "", "topic name of kafka")

@@ -48,6 +48,14 @@ var (
 			Help:      "the count of sql event(dml, ddl).",
 		}, []string{"type"})
 
+	kafkaCounter = prometheus.NewCounterVec(
+		prometheus.CounterOpts{
+			Namespace: "binlog",
+			Subsystem: "arbiter",
+			Name:      "kafka",
+			Help:      "the count of kafka message.",
+		}, []string{"type"})
+
 	queueSizeGauge = prometheus.NewGaugeVec(
 		prometheus.GaugeOpts{
 			Namespace: "binlog",
@@ -76,6 +84,7 @@ func init() {
 	Registry.MustRegister(checkpointTSOGauge)
 	Registry.MustRegister(queryHistogramVec)
 	Registry.MustRegister(eventCounter)
+	Registry.MustRegister(kafkaCounter)
 	Registry.MustRegister(queueSizeGauge)
 	Registry.MustRegister(txnLatencySecondsHistogram)
 }

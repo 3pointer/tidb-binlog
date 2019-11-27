@@ -98,10 +98,10 @@ func NewServer(cfg *Config) (srv *Server, err error) {
 
 	// set reader to read binlog from kafka
 	readerCfg := &reader.Config{
-		KafkaAddr: strings.Split(up.KafkaAddrs, ","),
-		CommitTS:  srv.finishTS,
-		Topic:     up.Topic,
-		ClientType: cfg.KafkaClient,
+		KafkaAddr:         strings.Split(up.KafkaAddrs, ","),
+		CommitTS:          srv.finishTS,
+		Topic:             up.Topic,
+		ClientType:        cfg.KafkaClient,
 		MessageBufferSize: cfg.MessageBufferSize,
 	}
 
@@ -289,6 +289,7 @@ func syncBinlogs(ctx context.Context, source <-chan *reader.Message, ld loader.L
 	defer ld.Close()
 	for msg := range source {
 		log.Debug("recv msg from kafka reader", zap.Int64("ts", msg.Binlog.CommitTs), zap.Int64("offset", msg.Offset))
+		kafkaCounter.WithLabelValues("Read").Inc()
 		txn, err := loader.SlaveBinlogToTxn(msg.Binlog)
 		if err != nil {
 			log.Error("transfer binlog failed, program will stop handling data from loader", zap.Error(err))
